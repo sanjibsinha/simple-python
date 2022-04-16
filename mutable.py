@@ -21,6 +21,7 @@ true
 false
 '''
 
+
 a = dict(x = 1, y = 2)
 print(id(a)) # 139948631430704
 print(type(a)) # <class 'dict'>
