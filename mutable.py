@@ -1,9 +1,14 @@
 # example of mutability
+
+'''
+ID is either immutable, or mutable
+'''
+
 m = [1, 2, 3]
 print(id(m)) # 140036389429640
 print(type(m)) # <class 'list'>
 n = [1, 2, 3]
-print(id(n)) # 140036336894536
+print(id(n)) # 140036336894536 ## same value but ID has changed
 print(type(n)) # <class 'list'>
 
 if(m == n):
