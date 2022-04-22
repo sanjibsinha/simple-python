@@ -20,6 +20,13 @@ print("*********")
 <class 'int'>
 *********
 '''
+
+x = 42
+y = 9
+z = x / y
+
+print(z) # 4.666666666666667
+
 # we want to round it up
 x = 42 // 9
 print(x)
