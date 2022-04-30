@@ -3,8 +3,8 @@ import time
 
 a_python_list = [0.5488135,  0.71518937, 0.60276338, 0.54488318, 0.4236548]
 startTime = time.time()
-time.sleep(3)
-print("Time to wake up, ~3 seconds have passed!")
+time.sleep(1)
+print("Time to wake up, ~1 seconds have passed!")
 print(a_python_list)
 endTime = time.time()
     
