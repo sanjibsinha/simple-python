@@ -1,17 +1,19 @@
-class Human:
-    def __init__(self, kind = "Good"):
-        self.kind = kind
-    def whatKind(self):
-        return self.kind
-def main():
-    GoodHuman = Human()
-    print(f"A Good human is {GoodHuman.whatKind()}")
-    BadHuman = Human("Bad")
-    print(f"A Bad human is {BadHuman.whatKind()}")
+class Bear:
+    age = 10
+    
+    def introduce(self):
+        print("I am Bear.")
+    
+    def eat(self):
+        print("I am eating.")
         
-if __name__ == "__main__": main()
+print(Bear.age) # output: 10
 
-'''
-A Good human is Good
-A Bad human is Bad
-'''
+print(Bear.introduce) # output: <function Bear.introduce at 0x7fea0c141670>
+
+print(Bear.eat) # output: <function Bear.eat at 0x7fea0c141820>
+
+
+
+
+
