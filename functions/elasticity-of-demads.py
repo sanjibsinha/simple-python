@@ -1,3 +1,5 @@
+# elastic
+
 def find_increase_in_percentage_change_in_price(initial_price, percentage):
     increase_in_percentage_change = initial_price * (1 + percentage/100)
     return int(increase_in_percentage_change)
