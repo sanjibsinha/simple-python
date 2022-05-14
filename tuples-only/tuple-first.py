@@ -21,6 +21,8 @@ print(lat_kol_tuple[1])
 print(long_kol_tuple[0])
 print(long_kol_tuple[1])
 
+# switching to branch tuples only
+
 '''
 (1, 'Hello World', 12.12, True, False, (45, 78))
 0
