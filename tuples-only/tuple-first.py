@@ -9,11 +9,30 @@ another_empty_tuple_after_comma = 'Hi',
 print(len(another_empty_tuple_after_comma))
 
 # functions that have multiple return values
-a_float = 45.896
-print(a_float.as_integer_ratio())
+lat_of_kolkata = 22.5726
+lat_kol_tuple = lat_of_kolkata.as_integer_ratio()
+print(lat_kol_tuple)
+long_of_kolkata = 88.3639
+long_kol_tuple = long_of_kolkata.as_integer_ratio()
+print(long_kol_tuple)
 
-numerator, denominator = a_float.as_integer_ratio()
-print(numerator / denominator)
+print(lat_kol_tuple[0])
+print(lat_kol_tuple[1])
+print(long_kol_tuple[0])
+print(long_kol_tuple[1])
 
-print(23.1256.as_integer_ratio())
+'''
+(1, 'Hello World', 12.12, True, False, (45, 78))
+0
+1
+(3176811029649477, 140737488355328)
+(1554514168410171, 17592186044416)
+3176811029649477
+140737488355328
+1554514168410171
+17592186044416
+'''
+
+
+
 
