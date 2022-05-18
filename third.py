@@ -1,35 +1,18 @@
-import re
 def main():
-    FindWord()
-    DEmarcationLine()
-    MatchWord()
-
-
-def FindWord():
-    files = open("file.txt")
-    for line in files:
-        if re.search('lenor|more', line):
-            print(line, end=' ')
+    GetARangeOfNumber()
+    
+    
+def GetARangeOfNumber():
+    for index in IteratingStepByStep(1, 123, 7):
+        print(index, end=' ')
+    
+    # 1 8 15 22 29 36 43 50 57 64 71 78 85 92 99 106 113 120
+    
+    
+def IteratingStepByStep(start, stop, step):
+    number = start
+    while number <= stop:
+        yield number
+        number += step
         
-def MatchWord():
-    files = open("file.txt")
-    for line in files:
-        match = re.search('(len|neverm)ore', line)
-        if match:
-            print(match.group())
-        
-def DEmarcationLine():
-        print("*************")
-
 if __name__ == "__main__": main()
-
-'''
-first line lenore
- third line and nevermore over
- fifth pine line lenore
- here is more line
- *************
-lenore
-nevermore
-lenore
-'''
