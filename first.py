@@ -1,26 +1,13 @@
-import re
-def main():
-    ReplaceWord()
-    DemarcationLine()
-    MatchAndReplaceWord()
-    
-def ReplaceWord():
-    files = open("file.txt")
-    for line in files:
-        
-        print(re.sub('lenor|more', "#####", line), end=' ')
-            
-        
-    
-def MatchAndReplaceWord():
-    files = open("file.txt")
-    for line in files:
-            match = re.search('(len|neverm)ore', line)
-            if match:
-                print(line.replace(match.group(), "#####"), end=' ')
-                
-    
-def DemarcationLine():
-    print("*************")
+import sys
 
-if __name__ == "__main__": main()
+try:
+    f = open('file.txt')
+    s = f.readline()
+    i = int(s.strip())
+except OSError as err:
+    print("OS error: {0}".format(err))
+except ValueError:
+    print("Could not convert data to an integer.")
+except BaseException as err:
+    print(f"Unexpected {err=}, {type(err)=}")
+    raise
