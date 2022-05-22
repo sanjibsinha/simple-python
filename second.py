@@ -1,20 +1,11 @@
-import re
+import numpy as np
 
-def main():
-    CompilerAndReplaceWord()
-
-def CompilerAndReplaceWord():
-    files = open("file.txt")
-    pattern = re.compile('(len|neverm)ore', re.IGNORECASE)
-    for line in files:
-        if re.search(pattern, line):
-            print(pattern.sub("---", line), end=' ')
-    
-
-if __name__ == "__main__": main()
+from_one_to_5 = np.arange(1, 10)
+multi_dimensional_array = from_one_to_5.reshape(3, 3)
+print(multi_dimensional_array)
 
 '''
-first line ---
- third line and --- over
- fifth pine line ---
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
 '''

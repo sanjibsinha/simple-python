@@ -1,26 +1,7 @@
-import re
-def main():
-    ReplaceWord()
-    DemarcationLine()
-    MatchAndReplaceWord()
-    
-def ReplaceWord():
-    files = open("file.txt")
-    for line in files:
-        
-        print(re.sub('lenor|more', "#####", line), end=' ')
-            
-        
-    
-def MatchAndReplaceWord():
-    files = open("file.txt")
-    for line in files:
-            match = re.search('(len|neverm)ore', line)
-            if match:
-                print(line.replace(match.group(), "#####"), end=' ')
-                
-    
-def DemarcationLine():
-    print("*************")
-
-if __name__ == "__main__": main()
+import numpy as np
+from_one_to_5 = np.arange(1, 5)
+print(from_one_to_5)
+# [1 2 3 4]
+one_to_five_list = range(1, 5);
+for x in one_to_five_list:
+    print(x)
