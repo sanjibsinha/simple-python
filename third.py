@@ -1,17 +1,12 @@
 import pandas as panda
+import matplotlib.pyplot as plt
 
 data_frame_of_numbers = panda.DataFrame({'name': ['John', 'Emily', 'Json'], 
                       'mark': [56, 89, 65]})
 
 names = data_frame_of_numbers['name']
-print(names.str.upper())
-marks = data_frame_of_numbers['mark']
-print(marks.sum())
 
-'''
-0     JOHN
-1    EMILY
-2     JSON
-Name: name, dtype: object
-210
-'''
+marks = data_frame_of_numbers['mark']
+
+plt.plot(names, marks)
+plt.show()
