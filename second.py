@@ -18,4 +18,3 @@ print(f'The y-coordinate is: {y_coordinate} when the '
 The y-coordinate is: 23 when the slope of the line is 5. 
 Intercept of y-axis is 3 and X coordinate is: 4
 '''
-# commiting to discrete
