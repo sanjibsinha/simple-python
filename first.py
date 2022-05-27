@@ -19,4 +19,3 @@ Enter the number of carbon atoms: 1
 Enter the number of hydrogen atoms: 4
 16.0 grams of hydrocarbon with 1 carbon atoms and 4 hydrogen atoms contain 6.019999999999999e+23 molecules
 '''
-# discrete first
