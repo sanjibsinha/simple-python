@@ -1,14 +1,15 @@
 import pandas as panda
 import matplotlib.pyplot as plt
 
-data_frame_of_numbers = panda.DataFrame({'name': ['John', 'Emily', 'Json', 'John', 'Emily', 'Json',], 
-                      'mark': [56, 89, 65, 69, 97, 68]},)
+data_frame_one = panda.DataFrame({'axis': ['X', 'Y', 'X', 'Y'], 
+                      'value': [2, 14, 0, 6]})
 
-names = data_frame_of_numbers['name']
+axis = data_frame_one['axis']
 
-aggregate_marks = data_frame_of_numbers.groupby('name').sum()
+value = data_frame_one['value']
 
-plt.plot(aggregate_marks, 'g--')
+plt.plot(axis, value)
 plt.show()
+
 
 
