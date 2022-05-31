@@ -1,13 +1,15 @@
-import matplotlib.pyplot as plt
+import numpy as np
 
-def find_line_of_slope(x1, y1, x2, y2):
-    line_of_slope = (y2 - y1) /(x2 - x1)
-    print(f'Line of slope is: {line_of_slope}')
-    
-find_line_of_slope(0, 3, 4, 23)
+list_of_numbers = [202, 4, 4, 4, 5, 5, 72, 9, 1002]
 
-# Line of slope is: 5.0
+mean = np.mean(list_of_numbers)
+print(f'The Mean is {mean}')
+# The Mean is 145.22222222222223
 
-plt.plot((0, 3), (4, 23))
+variance = np.var(list_of_numbers)
+print(f'The Variance is {variance}')
+# The Variance is 95596.17283950618
 
-plt.show()
+standard_deviation = np.std(list_of_numbers)
+print(f'The Standard deviation is: {standard_deviation}') 
+# The Standard deviation is: 309.1863076520469
