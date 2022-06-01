@@ -1,7 +1,7 @@
 import numpy as np
 
-print('Enter heights of your family in integer. Remember 5 Feet is 152 cm, and '
-      '6 feet is 182 cm. More or less or in-between. '
+print('Enter heights of your family members in integer. Remember 5 Feet is 152 cm, and '
+      '6 feet is 182 cm. You can enter more, less or in-between this range. '
       'The program will find whether the family members\' height close or diverse.')
 
 a1 = input('First height: ')
@@ -27,19 +27,26 @@ else:
           ' or very short.')
     
 '''
-First height: 151
-Second height: 149
-Third height: 157
-Fourth height: 153
-Fifth height: 150
+Enter heights of your family members in integer. 
+Remember 5 Feet is 152 cm, and 6 feet is 182 cm. 
+You can enter more, less or in-between this range. 
+The program will find whether the family members' height close or diverse.
+First height: 149
+Second height: 152
+Third height: 156
+Fourth height: 157
+Fifth height: 160
 Your family members are of equal heights. No one is very tall or very short.
 '''
 
 '''
-First height: 168
-Second height: 147
-Third height: 185
-Fourth height: 176
-Fifth height: 150
+Enter heights of your family members in integer. Remember 5 Feet is 152 cm, 
+and 6 feet is 182 cm. You can enter more, less or in-between this range. 
+The program will find whether the family members' height close or diverse.
+First height: 180
+Second height: 146
+Third height: 152
+Fourth height: 189
+Fifth height: 147
 Your family members' height are diversed. Someone is very tall, or very short.
 '''
