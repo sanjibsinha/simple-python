@@ -1,34 +1,19 @@
-import math
+# truth table
 
-list_of_numbers = [2, 4, 4, 4, 5, 5, 7, 9]
+is_true = True
+is_false = False
 
-how_many_numbers_in_the_list = len(list_of_numbers)
-
-mean = 0
-sum_of_all_numbers_in_list = 0
-
-for val in list_of_numbers:
-    sum_of_all_numbers_in_list = sum_of_all_numbers_in_list + val
-    
-print(f'Sum of all numbers in the list {sum_of_all_numbers_in_list}') # 40
-mean = sum_of_all_numbers_in_list / how_many_numbers_in_the_list
-print(f'The Mean is: {mean}') # 5.0
-
-sum_of_all_numbers_in_list_of_deviation = 0
-variance = 0
-for val in list_of_numbers:
-    sum_of_all_numbers_in_list_of_deviation = ((val - 5) ** 2) + sum_of_all_numbers_in_list_of_deviation
-
-""" print(sum_of_all_numbers_in_list_of_deviation) # 32 """
-    
-variance = sum_of_all_numbers_in_list_of_deviation / how_many_numbers_in_the_list
-print(f'The Variance is {variance}') # 4.0
-
-standard_deviation = math.sqrt(variance)
-
-print(f'The Standard deviation is: {standard_deviation}')
-    
-
-
-
-
+if is_true:
+    print('It\'s true.')
+    is_true = is_false
+    # false and false is false
+    if is_true and is_true: 
+        print('It\'s false. So it won\'t work.')
+    # false or false is false
+    elif is_true or is_true:
+        print('It\'s also false. So it won\'t work.')
+    else:
+        print('True is false, so it\'s false now. And it works')
+        
+else:
+    print('It\'s false. It will not come out as output. ')
