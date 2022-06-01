@@ -1,15 +1,23 @@
-import numpy as np
+# truth table
 
-list_of_numbers = [202, 4, 4, 4, 5, 5, 72, 9, 1002]
+is_true = True
+is_false = False
 
-mean = np.mean(list_of_numbers)
-print(f'The Mean is {mean}')
-# The Mean is 145.22222222222223
-
-variance = np.var(list_of_numbers)
-print(f'The Variance is {variance}')
-# The Variance is 95596.17283950618
-
-standard_deviation = np.std(list_of_numbers)
-print(f'The Standard deviation is: {standard_deviation}') 
-# The Standard deviation is: 309.1863076520469
+if is_true:
+    print('It\'s true.')
+    # true and false is false
+    if is_true and is_false: 
+        print('True and false is false, This block will not work. N/A')
+    # true or false is true
+    elif is_true or is_false:
+        print('True or false is true, This block will work.')
+    else:
+        print('N/A')
+        
+else:
+    print('N/A')
+    
+'''
+It's true.
+True or false is true, This block will work.
+'''
