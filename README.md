@@ -1,4 +1,4 @@
-# Simple Python is a repository that will not help you to break down at the words of Python
+# Simple Python is a repository that will not deter you learning Python
 
 ### On the contrary, as a beginner you will lean against this beautiful, easy to learn programming language and will start coding.
 
